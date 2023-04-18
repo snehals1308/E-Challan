@@ -1,0 +1,105 @@
+/* Style the dashboard container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    /* background-image: url("https://parivahan.gov.in/parivahan//sites/default/files/banner-h-10.jpg"); */
+  }
+  
+  /* Style the dashboard header */
+  .dashboard-header {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style the dashboard card grid */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Style the dashboard cards */
+  .dashboard-card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+  
+  .dashboard-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dashboard-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .dashboard-card .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .dashboard-card .btn:hover {
+    background-color: #0069d9;
+  }
+  
+  /* Style the sidebar */
+  .sidebar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    height: 100%;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    text-decoration: underline;
+  }
+
+  div {
+    text-align: center;
+    border: 2px solid black ;
+  }
+  #dashboard-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .btn {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  .btn:hover {
+    background-color: #d90004;
+  }

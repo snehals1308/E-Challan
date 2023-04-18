@@ -1,0 +1,27 @@
+<h1>Challans</h1>
+<!-- <button (click)="addChallan()">Add Challan</button> -->
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Vehicle Number</th>
+      <th>Owner Name</th>
+      <th>Violation Type</th>
+      <th>Amount</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let challan of challans">
+      <td>{{challan.id}}</td>
+      <td>{{challan.vehicleNumber}}</td>
+      <td>{{challan.ownerName}}</td>
+      <td>{{challan.violationType}}</td>
+      <td>{{challan.amount}}</td>
+      <td>
+        <button routerLink="/payment">Pay</button> &
+        <button (click)="deleteChallan(challan.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

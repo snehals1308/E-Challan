@@ -1,0 +1,8 @@
+<div>
+<!-- <h1>Dashboard</h1> -->
+
+<p>Welcome, {{ authService.isLoggedIn ? 'Admin' : 'Guest' }}!</p>
+
+<button *ngIf="authService.isLoggedIn" class="btn btn-danger" (click)="logout()">Logout</button>
+<img id="dashboard-image" src="https://parivahan.gov.in/parivahan//sites/default/files/banner-h-10.jpg" alt="image">
+</div>

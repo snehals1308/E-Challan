@@ -1,0 +1,26 @@
+<div class="container">
+    <h3>Check Vehicle Status</h3>
+    <form (ngSubmit)="onSubmit()" #vehicleStatusForm="ngForm">
+      <div class="form-group">
+        <label for="vehicle-number">Vehicle Number</label>
+        <input type="text" class="form-control" id="vehicle-number" [(ngModel)]="vehicleNumber" name="vehicleNumber" required>
+      </div>
+      <div class="form-group">
+        <img src="{{ captchaImage }}" alt="captcha">
+        <input type="text" class="form-control" id="captcha" [(ngModel)]="captcha" name="captcha" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Check Status</button>
+    </form>
+    <div *ngIf="showResult">
+      <h4>Vehicle Status</h4>
+      <div *ngIf="challan">
+        <p>Challan ID: {{ challan.id }}</p>
+        <p>Violation Type: {{ challan.violationType }}</p>
+        <p>Amount: {{ challan.amount }}</p>
+      </div>
+      <div *ngIf="!challan">
+        <p>No challan found for this vehicle.</p>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,22 @@
+<h2>Vehicle List</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Registration No</th>
+      <th>Type</th>
+      <th>Make</th>
+      <th>Model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let vehicle of vehicleList">
+      <td>{{ vehicle.id }}</td>
+      <td>{{ vehicle.regNo }}</td>
+      <td>{{ vehicle.type }}</td>
+      <td>{{ vehicle.make }}</td>
+      <td>{{ vehicle.model }}</td>
+    </tr>
+  </tbody>
+</table>
