@@ -16,14 +16,12 @@ export class VehiclestatusComponent {
   constructor(private http: HttpClient) {
     this.refreshCaptcha();
   }
-
   onSubmit(): void {
     // verify captcha
     if (this.captcha !== this.captchaImage) {
       alert('Incorrect captcha');
       return;
     }
-
     // send GET request to server to retrieve challan for this vehicle number
     this.http.get(`/api/challans?vehicleNumber=${this.vehicleNumber}`)
       .subscribe((response: any) => {
